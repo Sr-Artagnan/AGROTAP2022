@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+		<!--Style-->
+		<link rel="stylesheet" href="./complements/styles/classroom.css">
+		<link rel="stylesheet" href="./complements/styles/partials/buttons.css" />
+		<link rel="stylesheet" href="./complements/styles/partials/info.css" />
+		<link rel="stylesheet" href="./complements/styles/partials/invite.css" />
+	
+		<!-- main -->
+		<link rel="shortcut icon" href="./complements/images/logo.png">
+		<link rel="stylesheet" href="./complements/styles/partials/container.css" />
+		<link rel="stylesheet" href="./complements/styles/partials/menu_mob.css" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="./complements/styles/partials/header.css" />
+		<link rel="stylesheet" href="./complements/styles/partials/footer.css" />
+	
+		<script src="./complements/scripts/classroom.js" defer></script>
+
+		<title>CURSO - ILPF</title>
+	  </head>
+	  <body>
+		<header id="header">
+		  <div class="wrapper">
+			<div class="logo">
+			  <img class="logo-img" src="./complements/images/institutes/logo.png" alt="IFTM" />
+			</div>
+	
+			<nav class="menu">
+			  <a href="./index.html" class="menu-link">Sobre</a>
+			  <a href="#footer" title="No rodapé" class="menu-link">Contato</a>
+			  <a href="./subscription.html#subscription_card" class="menu-link">Cronograma</a>
+			  <a href="./classroom.html" id="class_link" class="menu-link">Sala de aula</a>
+			</nav>
+		  </div>
+	
+		  <div
+			style="
+			  display: flex;
+			  align-items: center;
+			  align-content: center;
+			  justify-content: center;
+			  align-self: center;
+			  justify-self: center;
+			  height: 100%;
+			"
+		  >
+			<button id="menu_button">
+			  <i class="fas fa-bars" style="color: white; font-size: 18px"></i>
+			  <span class="menu_mobile hidden">
+				<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+				<a href="./index.html" class="menu_mobile_option">Sobre</a>
+				<a href="#footer" class="menu_mobile_option">Contato</a>
+				<a href="./subscription.html#subscription_card" class="menu_mobile_option"
+				  >Cronograma</a
+				>
+				<a
+				  style="border-radius: 0px 0px 5px 5px"
+				  href="./classroom.html"
+				  class="menu_mobile_option"
+				  >Sala de aula</a
+				>
+			  </span>
+			</button>
+		  </div>
+		</header>
+		<section class="container">
+			<div class="container_buttons_access">
+				<button  style="margin-left: 0;" id="button_access_schedule" class="button_light" onclick="redirect()">ACESSAR CONTEÚDO</button>
+				
+					<button style="margin-left: 0;" id="button_access_schedule" class="button_light"><a class="link_button" href="./subscription.html#schedule_master">Ver a Programação</a></button>
+				</div>
+		
+			<section class="info" style="flex-direction: column;" >
+		
+				<div class="wrapper" >
+				<h1 class="info_title" style="text-align: center;" >BOAS VINDAS</h1>
+				<p style="text-align: justify;"> &nbsp &nbspBem vindo ao nosso curso!
+					<br>
+					&nbsp &nbsp  Neste curso online de capacitação, com carga horária de <b>24 hrs</b>, você irá conhecer mais sobre a Implantação do Sistema Agrossilvipastoril, também chamado de Sistema de Integração Lavoura-Pecuária-Floresta (ILPF). Você terá acesso a apostilas, vídeos e exercícios e ao final do curso, receberá um certificado de participação. 
+					<br> &nbsp  O período para conclusão deste curso vai do dia <b>16/11/2022 até 16/12/2022</b>.
+		<br> &nbsp Na data de 17/12/2022 haverá um <b> dia de de campo </b> no centro de estudos de sistemas Agrossilvipastoris do IFTM Campus Uberlândia e também na Fazenda Água Limpa da UFU, com professores da área, onde as peculiaridades do sistema serão demonstradas na prática e poderão ser sanadas as eventuais dúvidas. 
+		<br> &nbsp A conclusão somente será totalmente validada após o envio do <b>formulário de avaliação</b> contido no último módulo, e o certificado de participação será disponibilizado pela coordenação de extensão do IFTM Campus Uberlândia algumas semanas após a conclusão.
+				</p>
+				<br> <br> <br>
+		</div>
+	
+		</section>
+		</section>
+		<footer id="footer">
+            <div class="wrapper">
+              <div class="logo">
+                <img
+                  class="logo-img"
+                  src="./complements/images/logo_normal.png"
+                  alt="IFTM"
+                />
+                <h1 class="logo-name">GESA</h1>
+                <p class="Group">
+                  Grupo de estudos em <br />
+                  Sistema Agrosilvipastoril
+                </p>
+              </div>
+            </div>
+      
+            <div class="contact">
+              <div class="contact_card">
+                <a href="mailto: marceloardias@yahoo.com.br" id="email"
+                  ><i
+                    id="mail_icon"
+                    class="far fa-envelope"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="email">marceloardias@yahoo.com.br</p>
+                </a>
+              </div>
+              <div class="contact_card">
+                <a
+                  href="https://chat.whatsapp.com/JWBzgsyMQsWG9ibh3MSYEg"
+                  id="whatsapp"
+                >
+                  <i
+                    id="whatsapp_icon"
+                    class="fab fa-whatsapp"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="whatsapp" class="cont">Grupo GESA</p>
+                </a>
+              </div>
+              <div class="contact_card">
+                <a href="https://www.instagram.com/agrotap_tm/" id="insta"
+                  ><i
+                    id="insta_icon"
+                    class="fab fa-instagram"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="insta" class="cont">Agrotap</p></a
+                >
+              </div>
+            </div>
+        
+          </footer>
+      
+          <h1 class="h1_org">Organização:</h1>
+      
+          <div class="div_logos">
+      
+            <a href="https://iftm.edu.br/"><img src="./complements/images/institutes/iftm.png" id="iftm"alt=""></a>
+            <a href="https://www.crea-mg.org.br/node/79"><img src="./complements/images/institutes/agrotap.png" id="agrotap"alt=""></a>
+            <a href="https://www.crea-mg.org.br/node/79"><img src="./complements/images/institutes/crea.png" id="crea"alt=""></a>
+            <a href="https://www.emater.mg.gov.br/"><img src="./complements/images/institutes/emater.png" id="emater" alt=""></a>
+            <a href="http://www.iciag.ufu.br/"><img src="./complements/images/institutes/iciag.png" id="iciag"alt=""></a>
+          </div>
+
+
+</body>
+</html>

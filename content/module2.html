@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+		<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="wrapper">
+		  <div class="logo">
+			<img class="logo-img" src="../complements/images/institutes/logo.png" alt="IFTM" />
+		  </div>
+  
+		  <nav class="menu">
+			<a href="../index.html" class="menu-link">Sobre</a>
+			<a href="#footer" title="No rodapé" class="menu-link">Contato</a>
+			<a href="../subscription.html#subscription_card"  id="cron_link" class="menu-link">Cronograma</a>
+			<a href="../classroom.html" class="menu-link">Sala de aula</a>
+		  </nav>
+		</div>
+  
+		<div
+		  style="
+			display: flex;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			align-self: center;
+			justify-self: center;
+			height: 100%;
+		  "
+		>
+		  <button id="menu_button">
+			<i class="fas fa-bars" style="color: white; font-size: 18px"></i>
+			<span class="menu_mobile hidden">
+			  <span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+			  <a href="../index.html" class="menu_mobile_option">Sobre</a>
+			  <a href="#footer" class="menu_mobile_option">Contato</a>
+			  <a href="../subscription.html#subscription_card" class="menu_mobile_option"
+				>Cronograma</a
+			  >
+			  <a
+				style="border-radius: 0px 0px 5px 5px"
+				href="../classroom.html"
+				class="menu_mobile_option"
+				>Sala de aula</a
+			  >
+			</span>
+		  </button>
+		</div>
+	  </header>
+
+<div class="alert_div">
+	<div class="wrapper danger hidden">
+		<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. <br> Clique no botão abaixo</p>
+		<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+		<div class="container_module_btns" id="container_module_btns">
+
+			<div class="buttons">
+
+				<button class="module_btn active_mod mod1_btn" data-module="container_mod1" onclick="openModule(this)" id="1" name="1">Módulo 1</button>
+				<button class="user module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2" name="2">Módulo 2</button>
+				<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3" name="3">Módulo 3</button>
+				<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4" name="4">Módulo 4</button>
+				<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5" name="5">Módulo 5</button>
+				<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6" name="6">Módulo 6</button>
+			
+                <div class="line">
+                    <span class="line_btn"></span>
+                </div>
+            </div>
+		</div>
+
+
+
+<!-- module_2 -->
+<section id="container_mod2" class="container container_mod2 container_func">
+    <section id="module2_content">
+
+        <section class="info">
+
+            <div class="wrapper">
+                <h1 class="info_introduction">Manejo da Fertilidade<br>do Solo em áreas de ILPF</h1>
+
+                <p class="info_description"> Neste módulo serão apresentados os fatores que afetam a disponibilidade dos nutrientes para as plantas e como estes devem ser manejados, iniciando-se com a correta análise química e física do solo, além de uma adequada correção da acidez, adubação e manejo dos resíduos orgânicos. Será demonstrado como a fertilidade do solo é essencial ao sucesso do sistema.</p>
+
+            </div>
+
+            <img class="info_img info_img_icon" id="icon_img" title="vecteezy.com" src="../complements/images/module2/img_1.jpg">
+
+        </section>
+
+        <a target="_blank" href="../books/module_2.pdf"class="download_button">Baixar apostila</a>
+
+        <section class="video_wrapper">
+            <p class="video_description">Acompanhe o vídeo introdutório:</p>
+            <iframe class="video_class" src="https://www.youtube.com/embed/nY0rKeAEDsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- topic 01 mod2 -->
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+                <p> &nbsp &nbsp Das áreas utilizadas pela agropecuária no Brasil, um percentual elevado, especialmente o relativo às pastagens, encontra-se em alguma fase de degradação. O principal fator desencadeador da degradação está ligado a problemas de fertilidade do solo <a href="#ref_M2">[1]</a>. <br> 
+                &nbsp &nbsp Nesse contexto, o Sistema integração Lavoura-Pecuária-Floresta (ILPF) já está consolidado como uma estratégia para essa recuperação. Por ser um sistema complexo de produção, as recomendações para a correção da fertilidade do solo devem estar adequadas às condições locais do sistema. <br>
+                &nbsp &nbsp A fertilidade do solo está diretamente relacionada com a qualidade deste, que é medida a partir de indicadores. Um bom indicador deve responder de forma sensível ao manejo, estar relacionado com as funções desempenhadas pelo solo, ser compreensível e útil para o agricultor e de forma barata e fácil de medir <a href="#ref_M2">[2]</a>.
+                &nbsp &nbsp Antes da implantação do sistema e durante seu manejo, a fertilidade do solo deve ser observada e manejada de acordo com três principais atributos: <br>
+                    &nbsp &nbsp - Atributos físicos do solo; <br>
+                    &nbsp &nbsp - Atributos químicos do solo; <br>
+                    &nbsp &nbsp - Atributos biológicos do solo. <br></p>
+
+            </div>
+        </section>
+
+        <!-- topic 02 mod2 -->
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="topic_number">02</b>Atributos Físicos do Solo</h1>
+
+                <p> &nbsp &nbsp Antes da implantação do sistema de ILPF, é necessário avaliar se existe alguma restrição ao crescimento das raízes, tanto das culturas anuais, quanto das espécies arbóreas. Para isso é necessário avaliar se há camadas compactadas ou alguma restrição à infiltração de água, como grandes declives ou solos muito argilosos.</p>
+
+                <div class="box_info">
+                    &nbsp &nbsp A forma mais fácil de observar se há camadas compactadas em campo é verificando a resistência à penetração deste, que é feita por um equipamento conhecido por penetrômetro. Quando é identificada a compactação do solo, recomenda-se utilizar um sistema de manejo que possibilite romper a camada compactada. A escarificação é uma forma de reduzir a resistência do solo à penetração com pouca mobilização, o que é importante quando se trabalha com sistema de plantio direto (SPD).
+
+                    <img title="Fonte: Canaoeste" class="box_img_right" src="../complements/images/module2/img_3.jpg">
+
+                </div>
+
+                <div class="box_info">
+
+                    <img title="embrapa.com.br" class="box_img_left" src="../complements/images/module2/img_4.jpg">
+
+                    <p> &nbsp &nbsp Quando a camada compactada está em profundidades não atingidas pelos escarificadores, a subsolagem é recomendada<a href="#ref_M2">[3]</a>.
+                    &nbsp &nbsp Outros atributos que devem ser verificados antes e após a implantação do sistema são aqueles que vão influenciar no crescimento das raízes e disponibilidade de água no solo, como: Densidade do solo de partículas, porosidade total, textura do solo, velocidade de infiltração básica e infiltração acumulada de água no solo, estrutura e estabilidade dos agregados, entre outros. Tais atributos podem ser diagnosticados pelo técnico responsável a partir de análises de laboratório de amostras deformadas e indeformadas de solo <a href="#ref_M2">[4]</a>.</p>
+
+                </div>
+            </div>
+        </section>
+        <!-- topic 03 mod2 -->
+
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="topic_number">03</b>Atributos Químicos do Solo</h1>
+
+
+                <p> &nbsp &nbsp As análises químicas são as mais comuns de serem realizadas. São de grande importância para a verificação dos teores dos nutrientes essenciais ao desenvolvimento das plantas e para a verificação de existência de acidez no solo, que é muito comum de ocorrer nos solos do cerrado. <br>
+                &nbsp &nbsp Vários estudos têm mostrado os benefícios nos atributos químicos do solo provocados pela utilização de sistemas de integração: <br>
+                </p>
+
+                <ul>
+                    <li>A presença de animais no sistema acelera o processo de ciclagem de nutrientes por disponibilizá-los na forma mineralizada por meio das fezes e urina. </li>
+                    <li> Em Sistema ILP (integração Lavoura-Pecuária) um dos fatores que mais contribuem para a melhoria na fertilidade é a ciclagem dos nutrientes e a eficiência no uso de fertilizantes, em função das diferentes necessidades das culturas em rotação. </li>
+                    <li>A combinação de pastagens seguidas de culturas anuais para a produção de grãos é mais eficiente na manutenção da qualidade química do solo, favorecendo o desenvolvimento das plantas.</li>
+                    <li>As espécies com sistemas radiculares de diferentes formas e tamanhos promovem maior ciclagem de nutrientes <a href="#ref_M2">[5]</a>. </li>
+                </ul> <br>
+
+                <p>Antes da implantação do sistema é necessário realizar os procedimentos listados nos subtópicos seguintes:</p>
+
+
+            </div>
+        </section>
+
+        <section class="container_dinamic">
+
+            <section class="dinamic_buttons">
+                <button class="d_button active dinamic-btn" data-target="content-1">
+                    3.1 Amostragem de Solo </button>
+
+                <button class="d_button dinamic-btn" data-target="content-2">
+                    3.2 Calagem </button>
+
+                <button class="d_button dinamic-btn" data-target="content-3">
+                    3.3 Gessagem </button>
+
+            </section>
+
+            <section class="dinamic_content">
+
+                <div class="p_content content-1 box_info">
+                    <p>&nbsp &nbsp É uma etapa muito importante para que os resultados das análises químicas estejam de acordo com as características de cada área. Para que as amostras sejam representativas, a área a ser amostrada deverá ser a mais homogênea possível, subdividida em glebas ou talhões. Quanto à profundidade de amostragem, para a maioria das culturas, as amostras simples são coletadas na camada de 0 a 20 cm. Para áreas novas, principalmente quando pretende estabelecer culturas perenes, é indicado amostrar as camadas de 0 a 20 cm e de 20 a 40 cm <a href="#ref_M2">[6]</a>.</p>
+
+                    <img title="embrapa.com.br" class="box_img_right" src="../complements/images/module2/img_5.jpg">
+
+                </div>
+
+                <div class="hidden p_content content-2 box_info">
+                    <p>&nbsp &nbsp Os solos do cerrado são conhecidos por apresentarem acidez elevada, com altos teores de alumínio (Al) trocável e a deficiência de nutrientes como P, cálcio (Ca) e magnésio (Mg). Dessa forma, para que o potencial agrícola seja atingido, a correção da acidez do solo pela calagem faz-se necessária. <br>
+                    &nbsp &nbsp No Sistema ILPF, pratica-se o cultivo de várias culturas de diversos graus de tolerância à acidez do solo. Tendo como base o cultivo de diferentes espécies, a recomendação de calagem deve priorizar a espécie mais exigente. No caso de SPD, após a sua implantação, recomenda-se, a calagem com aplicação de doses anuaismenores, em lugar de doses elevadas a cada três ou quatro anos <a href="#ref_M2">[7]</a>.
+                    </p>
+
+                    <img title="embrapa.com.br" class="box_img_right" src="../complements/images/module2/img_6.jpg">
+
+                </div>
+
+                <div class="hidden p_content content-3 box_info">
+                    <p>&nbsp &nbsp De acordo com as análises químicas, caso o produtor queira implantar espécies arbóreas mais exigentes, a prática de aplicação de gesso agrícola tem sido uma boa opção para sanar a deficiência de Ca em profundidade, que geralmente está associada à toxicidade de Alumínio. Por esse fato, o uso do gesso tem sido recomendado junto com o calcário, proporcionando, assim, melhor distribuição do nutriente magnésio presente no calcário no perfil do solo <a href="#ref_M2">[7]</a>.
+                    </p>
+
+                    <img title="codevasf.gov.br" class="box_img_right" src="../complements/images/module2/img_7.jpg">
+
+                </div>
+            </section>
+        </section>
+
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="subtopic_number">3.4</b>Recomendações e manejo de adubação</h1>
+
+                <p> &nbsp &nbsp Em sistemas que utilizam a sucessão e a rotação de culturas, as recomendações de adubação priorizam a cultura com maior exigência nutricional. No caso de implantação do sistema, deve-se atentar para realizar uma adubação de plantio na espécie florestal, de acordo com a recomendação para a mesma, ou caso não haja alguma recomendação para a região, seguir a recomendação de algum técnico. <a href="#ref_M2">[8]</a>. <br> 
+                &nbsp &nbsp Para o manejo da adubação, cabe lembrar que vai depender muito do nível de fertilidade do solo. Em solos de baixa fertilidade, pode ser interessante também a adubação da forrageira semeada na entrelinha de cultivo do milho, principalmente com P e K, para obter uma boa formação do pasto. Em solos onde os níveis de fertilidade enquadram-se com níveis maiores de fertilidade, pode-se efetuar a adubação apenas para a cultura do milho, por exemplo. Deve-se atentar também para a forma de aplicação e a época, adequando melhor ao sistema que for adotado. <br><br></p>
+
+                <div class="img_isolated_div">
+                    <img style="margin-bottom: 70px;" title="embrapa.com.br" class="isolated_img" src="../complements/images/module2/img_8.jpg">
+                </div>
+
+                <p> &nbsp &nbsp Atualmente, a cultura florestal mais utilizada em sistemas de iLPF tem sido o Eucalipto, que, apesar de ser uma espécie de crescimento rápido, necessita de adubações para melhorar seu incremento de madeira e diminuir seu tempo de corte. A maior proporção dos nutrientes requeridos por espécies de rápido crescimento, como as de eucalipto, deve ser suprida até a idade de três anos, logo, a adubação de plantio e as coberturas são essenciais para o desenvolvimento da espécie florestal no sistema <a href="#ref_M2">[8]</a>. <br> </p>
+
+            </div>
+        </section>
+
+        
+        <section class="learn_more" style="margin-bottom: 70px;" >
+
+            <i  class="fas fa-video"></i>
+
+            <button onclick="show_info(this)" data-lrn_mr="lrn_mr_2" class="button_visible">Saiba Mais</button>
+
+            <div id="lrn_mr_2" class="information hidden">
+                <section class="video_wrapper">
+                    <iframe class="video_class" src="https://www.youtube.com/embed/C9xamr4nnuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+            </div>
+        </section>
+
+        <!-- topic 04 mod2-->
+
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="topic_number">04</b>Atributos Biológicos do Solo</h1>
+
+                <p> &nbsp &nbsp Os benefícios da ILPF sobre os atributos biológicos do solo têm sido mostrados em vários estudos: </p><br>
+                <ul>
+                    <li>A deposição de biomassa das árvores e das gramíneas na superfície do solo consiste num meio importante de ciclagem de nutrientes.</li>
+                    <li>A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo <a href="#ref_M2">[9]</a>.</li>
+                    <li>Após a colheita da lavoura, as forrageiras podem aproveitar os nutrientes residuais da lavoura. </li>
+                    <li>Uma das características importantes para o melhoramento da qualidade física e biológica do solo é justamente a quantidade de palhada deixada sobre o solo e raízes no perfil do solo. </li>
+                    <li>A decomposição das raízes forma uma rede de canalículos no solo, influenciando diretamente nas trocas	gasosas e infiltração da água <a href="#ref_M2">[10]</a></li>
+                </ul>
+
+                <div class="box_info">
+                    <ul>
+                        <li>Além disso, estima-se que tanto a biomassa quanto os produtos de madeira podem reter muito carbono. A potencialidade de sequestro de carbono do componente florestal e a viabilidade econômica do sistema iLPF são determinados, de acordo com os estoques de carbono presentes no solo, nas raízes e na parte aérea das árvores, demonstrando que a comercialização dos créditos de carbono pode trazer retorno econômico ao produtor no período de implantação do sistema <a href="#ref_M2">[11]</a></li>(SPD).
+                    </ul>
+
+                    <img title="embrapa.com.br" class="box_img_right" src="../complements/images/module2/img_9.jpg">
+
+                </div>
+                <br>
+
+            </div>
+        </section>
+
+        <!-- topic 05 mod2 -->
+
+        <section class="container_text">
+
+            <div class="wrapper">
+                <h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+                <p> - O manejo adequado da fertilidade do sistema ajuda a obter melhores produtividades das lavouras, da forragem e mais produção de madeira em um menor período de tempo, além de diminuir os riscos por erosão. <br>
+                - Nesse contexto, o uso do sistema de plantio direto (SPD) passou a ser uma das melhores e mais usadas práticas de manejo da fertilidade em áreas de iLPF, visando a melhoria dos atributos físicos, químicos e biológicos do solo, com suas técnicas que visam diminuir a compactação do solo, a manutenção de resíduos culturais na superfície do solo e diversificação de espécies com uso de rotação, sucessão e/ou consorciação de culturas <a href="#ref_M2">[12]</a>.</p>
+
+            </div>
+        </section>
+
+        <!-- EXERCISES MOD2 -->
+        <section class="info">
+
+            <div class="wrapper">
+                <h1 class="info_title">Exercícios</h1>
+                <p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente. </p>
+
+            </div>
+        </section>
+
+
+        <!-- Question 1 mod2 -->
+
+        <section class="master_form master_formM2" id="master_form">
+            <section id="2" data-question="Q1" class="form form1 form_from_M2">
+                <p class="question"><b>Questão 1:</b> Com relação a um bom indicador de qualidade do solo, marque a alternativa incorreta:</p>
+
+                <input class=" false input_option" hidden id="option1_q1_M2" type="radio">
+                <label class="option" for="option1_q1_M2">a) Deve ser responsivo de forma sensível ao manejo do solo;</label>
+
+                <input class=" false input_option" hidden id="option2_q1_M2" type="radio">
+                <label class="option" for="option2_q1_M2">b) Deve ser de fácil compreensão e útil ao produtor;</label>
+
+                <input class=" true input_option" hidden id="option3_q1_M2" type="radio">
+                <label class="option option_true" for="option3_q1_M2">c) Deve estar relacionado somente aos atributos físicos do solo;</label>
+
+                <input class=" false input_option" hidden id="option4_q1_M2" type="radio">
+                <label class="option" for="option4_q1_M2">d) Deve ser fácil de medir e barato.</label>
+
+                <button type="button" id="Q1" class="send_answer send_answer1">Responder</button>
+
+                <div class="feedback">
+                    <div class="hidden correct_answer correct_answerQ1">
+
+                        <p>
+                            <i class="fas fa-check-circle"></i>
+                            <b>PARABÉNS!</b> <br>
+                            <b>Resposta Correta.</b> Um bom indicador de qualidade do solo deve estar
+                            relacionado com as funções desempenhadas por este, incluindo os atributos físicos, químicos e biológicos do solo.</p>
+
+                    </div>
+
+                    <div class="hidden wrong_answer wrong_answerQ1">
+                        <p>
+                            <i class="fas fa-times-circle"></i>
+                            <b>RESPOSTA INCORRETA!</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="2" class=" div_answer hidden">
+                <button class="see_answer" id="ans_Q1_M2">
+                    Ver resposta</button>
+                <p class="hidden answer ans_Q1_M2" >Resposta: Letra (c)<br>
+                    Um bom indicador de qualidade do solo deve estar
+                    relacionado com as funções desempenhadas por este, incluindo os atributos físicos, químicos e biológicos do solo.
+                </p>
+            </div>
+
+            <!-- Question 2 mod2-->
+
+            <section id="2" data-question="Q2" class="form form2 form_from_M2">
+                <p class="question"><b>Questão 2:</b> Antes da implantação do sistema de iLPF é necessário avaliar se existe alguma restrição ao crescimento das raízes, tanto das culturas anuais, quanto das espécies arbóreas. Para isso é necessário avaliar se há camadas compactadas ou alguma restrição à infiltração de água, como grandes declives ou solos muito argilosos. Com base nisso, marque a afirmação correta.</p>
+
+                <input class=" false input_option" id="option1_q2_M2" hidden type="radio">
+                <label class="option" for="option1_q2_M2">a) Antes da implantação do sistema, basta verificar se há alguma restrição ao crescimento das raízes, usando um escarificador.</label>
+
+                <input class=" true input_option" id="option2_q2_M2" hidden type="radio">
+                <label class="option option_true" for="option2_q2_M2">b) Quando a camada compactada se encontra em profundidades maiores, recomenda-se realizar a subsolagem.</label>
+
+                <input class=" false input_option" id="option3_q2_M2" hidden type="radio">
+                <label class="option" for="option3_q2_M2">c) Os atributos que influenciam na disponibilidade de água no solo e crescimento das raízes não são tão relevantes quando há grandes declives ou solos muito argilosos.</label>
+
+                <input class=" false input_option" id="option4_q2_M2" hidden type="radio">
+                <label class="option" for="option4_q2_M2">d) Quando há compactação no solo recomenda-se usar um sistema de manejo que não remova as camadas compactadas.</label>
+
+                <button type="button" id="Q2" class="send_answer send_answer2">Responder</button>
+
+                <div class="feedback">
+                    <div class="hidden correct_answer correct_answerQ2">
+
+                        <p>
+                            <i class="fas fa-check-circle"></i>
+                            <b>PARABÉNS!</b> <br>
+                            <b>Resposta Correta.</b> Em camadas compactadas de solo onde a escarificação não se torna efetiva, é necessário o uso de subsolagem. Recomenda-se realizar a subsolagem antes da implantação do sistema de iLPF, e, após sua implantação, trabalhar com plantas que favoreçam a descompactação do solo, com sistemas radiculares mais fortes e profundos.</p>
+
+                    </div>
+                    <div class="hidden wrong_answer wrong_answerQ2">
+                        <p><i class="fas fa-times-circle"></i>
+                            <b>RESPOSTA INCORRETA!</b>
+
+                    </div>
+                </div>
+            </section>
+
+            <div id="2" class="div_answer hidden">
+                <button class="see_answer" id="ans_Q2_M2">
+                    Ver resposta</button>
+                <p class="hidden answer ans_Q2_M2" >Resposta: letrra (b) <br>
+                    Em camadas compactadas de solo onde a escarificação não se torna efetiva, é necessário o uso de subsolagem. Recomenda-se realizar a subsolagem antes da implantação do sistema de iLPF, e, após sua implantação, trabalhar com plantas que favoreçam a descompactação do solo, com sistemas radiculares mais fortes e profundos.
+                </p>
+            </div>
+
+            <!-- Question 3 mod2-->
+            <section id="2" data-question="Q3" class="form form3 form_from_M2">
+                <p class="question"><b>Questão 3:</b> Com relação aos atributos químicos do solo, é incorreto afirmar:
+                </p>
+
+                <input class=" false input_option" id="option1_q3_M2" hidden type="radio">
+                <label class="option" for="option1_q3_M2">a) As espécies de plantas com sistemas radiculares de diferentes formas e tamanhos promovem maior ciclagem de nutrientes.</label>
+
+                <input class=" true input_option" id="option2_q3_M2" hidden type="radio">
+                <label class="option option_true" for="option2_q3_M2">b) Os solos do cerrado são conhecidos por apresentarem baixa acidez, mas apresentam deficiência de nutrientes como fósforo (P), cálcio (Ca) e magnésio (Mg). Por isso a calagem não tem sido uma prática viável atualmente.</label>
+
+                <input class="false input_option" id="option3_q3_M2" hidden type="radio">
+                <label class="option" for="option3_q3_M2">c) De acordo com as análises químicas, caso o produtor queira implantar espécies arbóreas mais exigentes, a prática de aplicação de gesso agrícola tem sido uma boa opção para sanar a deficiência de cálcio em profundidade, que geralmente está associada à toxicidade de alumínio.</label>
+
+                <input class=" false input_option" id="option4_q3_M2" hidden type="radio">
+                <label class="option" for="option4_q3_M2">d) Em solos de baixa fertilidade, pode ser interessante também a adubação da forrageira semeada na entrelinha de cultivo do milho, principalmente com fósforo e potássio, para obter uma boa formação do pasto.</label>
+
+                <button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+                <div class="feedback">
+                    <div class="hidden correct_answer correct_answerQ3">
+
+                        <p><i class="fas fa-check-circle"></i>
+                            <b>PARABÉNS!!</b> <br>
+                            <b>Resposta Correta.</b> Os solos do Cerrado geralmente apresentam acidez elevada, sendo necessária a prática de calagem visando reduzir a acidez e melhorar a disponibilidade de nutrientes, com o fósforo (P), cálcio (Ca) e magnésio (Mg). Deve-se ressaltar que tal prática deve ser orientada por um técnico responsável, a partir da análise química do solo. </p>
+
+                    </div>
+
+                    <div class="hidden wrong_answer wrong_answerQ3">
+                        <p><i class="fas fa-times-circle"></i>
+                            <b>RESPOSTA INCORRETA!</b>
+                    </div>
+                </div>
+            </section>
+
+            <div id="2" class="div_answer hidden">
+                <button class="see_answer" id="ans_Q3_M2">
+                    Ver resposta</button>
+                <p class="hidden answer ans_Q3_M2" >Resposta: letra (b) <br>
+                    Os solos do Cerrado geralmente apresentam acidez elevada, sendo necessária a prática de calagem visando reduzir a acidez e melhorar a disponibilidade de nutrientes, com o fósforo (P), cálcio (Ca) e magnésio (Mg). Deve-se ressaltar que tal prática deve ser orientada por um técnico responsável, a partir da análise química do solo. 
+                </p>
+            </div>
+
+            <!-- Question 4 mod2-->
+
+            <section id="2" data-question="Q4" class="form form4 form_from_M2">
+                <p class="question"><b>Questão 4:</b> São exemplos de benefícios de sistemas de iLPF sobre atributos biológicos do solo, exceto:</p>
+
+                <input class="true input_option" id="option1_q4_M2" hidden type="radio">
+                <label class="option option_true" for="option1_q4_M2">a) A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, diminui os teores de carbono e não influi nas condições de agregação e porosidade do solo.</label>
+
+                <input class="false input_option" id="option2_q4_M2" hidden type="radio">
+                <label class="option" for="option2_q4_M2">b) Uma das características importantes para a melhora da qualidade física e biológica do solo é justamente a quantidade de palhada deixada sobre o solo e as raízes no perfil do solo.</label>
+
+                <input class=" false input_option" id="option3_q4_M2" hidden type="radio">
+                <label class="option" for="option3_q4_M2">c) A deposição de biomassa das árvores e das gramíneas na superfície do solo consiste num meio importante de ciclagem de nutrientes.</label>
+
+                <input class=" false input_option" id="option4_q4_M2" hidden type="radio">
+                <label class="option" for="option4_q4_M2">d) A decomposição das raízes forma uma rede de canalículos no solo, influenciando diretamente nas trocas gasosas e infiltração da água.</label>
+
+                <button type="button" id="Q4" class="send_answer send_answer4">Responder</button>
+
+                <div class="feedback">
+                    <div class="hidden correct_answer correct_answerQ4">
+                        <p>
+                            <i class="fas fa-check-circle"></i>
+                            <b>PARABÉNS!</b> <br>
+                            <b>Resposta Correta.</b> A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo, além de favorecer a ciclagem de nutrientes e maior fertilidade do solo a longo prazo.</p>
+                    </div>
+
+                    <div class="hidden wrong_answer wrong_answerQ4">
+                        <p><i class="fas fa-times-circle"></i>
+                            <b>RESPOSTA INCORRETA!</b>
+
+                    </div>
+                </div>
+            </section>
+
+            <div id="2" class="div_answer hidden">
+                <button class="see_answer" id="ans_Q4_M2">
+                    Ver resposta</button>
+                <p class="hidden answer ans_Q4_M2" >Resposta: letra (a) <br>
+                    A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo, além de favorecer a ciclagem de nutrientes e maior fertilidade do solo a longo prazo.</p>
+            </div>
+
+            <div class="form" id="2">
+                <button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+            </div>
+        </section>
+
+
+        <!-- References mod2-->
+        <section class="container_text" id="ref_M2">
+            <div class="wrapper references">
+                <h1 class="text_title">REFERÊNCIAS:</h1>
+
+                <p>[1] MACEDO, M. C. M. Degradação de pastagens: conceitos, alternativas e métodos de recuperação. Informe Agropecuário. Pastagem, Belo Horizonte, v.Z6, n.226, p.36-42, 2005.<br>
+                [2] DORAN, J.W. & ZEISS, M.R. Soil health and sustainability; Managing the biotic component of soil quality. Appl. Soil. Ecol.,5:3-11, 2000. <br>
+                [3] BERGAMIN, A.C. Compactação do solo em sistemas intensivos de produção. Informações Agronômicas, [s.l], v. 164, p. 1-12, dez. 2018. <br>
+                [4] INGARAMO, O.E. Indicadores físicos de la degradación Del suelo. La Coruña, Universidade da Coruña,	2003. 298p. (Tese de Doutorado). <br>
+                [5] MACEDO, M.C.M. Integração lavoura e pecuária: o estado da arte e inovações tecnológicas. Rev. Bras. Zootecnia. 38:133-146,2009. <br>
+                [6] CANTARUTTI, R.B.; ALVAREZ v., V.H.; RIBEIRO, A.C. Amostragem do solo. In: RIBEIRO, A.C.; GUIMARÃES, P.T.G.; ALVAREZ v., V.H. (Ed.). Recomendação para o uso de corretivos e fertilizantes em Minas Gerais: 5ª aproximação. Viçosa, MG: Comissão de Fertilidade do Solo do Estado de Minas Gerais, 1999. p.13-Z0. <br>
+                [7] ALVAREZ v., V.H.; RIBEIRO, A.C. Calagem. In: RIBEIRO, A.C.; GUIMARÃES, P.T.G.; ALVAREZ V.,V.H. (Ed.). Recomendação para o uso de corretivos e fertilizantes em Minas Gerais: 5a aproximação. Viçosa, MG: Comissão de Fertilidade do Solo do Estado de Minas Gerais, 1999. p.43-60. <br>
+                [8] Freire, F. M., Coelho, A. M., de BARROS, N. F., de Barros Filho, N. F., & NEVES, J. Manejo da fertilidade do solo no Sistema Integração Lavoura-Pecuária-Floresta. Embrapa Milho e Sorgo-Artigo em periódico indexado (ALICE), 2010. <br>
+                [9] LOSS, A.; RIBEIRO, E. C.; PEREIRA, M. G.; COSTA, E. M. Atributos físicos e químicos do solo em sistemas de consórcio e sucessão de lavoura, pastagem e silvipastoril em Santa Teresa, ES. Bioscience Journal, v. 30, n. 5, p. 1347-1357, 2014. <br>
+                [10] ALVARENGA, R.C.; NOCE, A. M. Integração Lavoura-Pecuária. Sete Lagoas: Embrapa Milho e Sorgo, 2005. 16p. (Boletim Técnico, 47). <br>
+                [11] CERRI, C.C.; MAIA, S.F.M.; GALDOS, M.V.; CERRI, C.E.P.; FEIGL, B.J.; BERNOUX, M. Brazilian greenhouse gas emissions: the importance of agriculture and livestock. Scientia Agricola, v.66, n.6, p.831-843, 2009. <br>
+                [12] DENARDIN, José Eloir et al. Diretrizes do sistema plantio direto no contexto da agricultura conservacionista. Passo Fundo: Embrapa Trigo, v. 15, 2012.</p>
+
+            </div>
+        </section>
+</section>
+    </section>
+        
+
+
+
+
+        <footer id="footer">
+            <div class="wrapper">
+              <div class="logo">
+                <img
+                  class="logo-img"
+                  src="../complements/images/logo_normal.png"
+                  alt="IFTM"
+                />
+                <h1 class="logo-name">GESA</h1>
+                <p class="Group">
+                  Grupo de estudos em <br />
+                  Sistema Agrosilvipastoril
+                </p>
+              </div>
+            </div>
+      
+            <div class="contact">
+              <div class="contact_card">
+                <a href="mailto: gesaiftm@gmail.com" id="email"
+                  ><i
+                    id="mail_icon"
+                    class="far fa-envelope"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="email">gesaiftm@gmail.com</p>
+                </a>
+              </div>
+              <div class="contact_card">
+                <a
+                  href="https://chat.whatsapp.com/JWBzgsyMQsWG9ibh3MSYEg"
+                  id="whatsapp"
+                >
+                  <i
+                    id="whatsapp_icon"
+                    class="fab fa-whatsapp"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="whatsapp" class="cont">Grupo GESA</p>
+                </a>
+              </div>
+              <div class="contact_card">
+                <a href="https://www.instagram.com/gesa_iftm/" id="insta"
+                  ><i
+                    id="insta_icon"
+                    class="fab fa-instagram"
+                    style="font-weight: 300"
+                  ></i>
+                  <br />
+                  <p id="insta" class="cont">Gesa_IFTM</p></a
+                >
+              </div>
+            </div>
+        
+          </footer>
+      
+          <h1 class="h1_org">Organização:</h1>
+      
+          <div class="div_logos">
+      
+            <a href="https://iftm.edu.br/"><img src="../complements/images/institutes/iftm.png" id="iftm"alt=""></a>
+            <a href="https://www.crea-mg.org.br/node/79"><img src="../complements/images/institutes/agrotap.png" id="agrotap"alt=""></a>
+            <a href="https://www.crea-mg.org.br/node/79"><img src="../complements/images/institutes/crea.png" id="crea"alt=""></a>
+            <a href="https://www.emater.mg.gov.br/"><img src="../complements/images/institutes/emater.png" id="emater" alt=""></a>
+            <a href="http://www.iciag.ufu.br/"><img src="../complements/images/institutes/iciag.png" id="iciag"alt=""></a>
+          </div>
+
+</body>
+</html>
