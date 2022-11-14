@@ -94,7 +94,7 @@ btn_finish.map((item) => {
 }
 
 function to_certify() {
-    window.open("https://forms.gle/LcutQNtQukcfy72TA", '_blank')
+    window.open("https://forms.gle/AsEGdABJZsd7X7LH8", '_blank')
 }
 
 const forms = Array.from(document.querySelectorAll(".form"));
